@@ -25,16 +25,16 @@ const menuData = async()=> {
   const videoCont = document.getElementById("video");
   
   const Allbtn = async()=> {
-    document.getElementById("Music").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Music").classList.add("text-[#1f2935]", "bg-gray-300");
     
     document.getElementById("Comedy")
-      .classList.add("bg-gray-300", "text-[#1f2935]");
+      .classList.add("text-[#1f2935]", "bg-gray-300");
     
     document.getElementById("Drawing")
-      .classList.add("bg-gray-300", "text-[#1f2935]");
+      .classList.add("text-[#1f2935]", "bg-gray-300");
    
     document
-      .getElementById("All").classList.remove("bg-gray-300", "text-[#1f2935]");
+      .getElementById("All").classList.remove("text-[#1f2935]", "bg-gray-300");
     
     document.getElementById("All").classList.add("bg-red-500", "text-white");
   
@@ -63,10 +63,8 @@ const menuData = async()=> {
       function toHourAndMinit(sec) {
         let mModulus = sec % 60;
         let minute = (sec - mModulus) / 60;
-  
         let realMinute = minute % 60;
         let hour = (minute - realMinute) / 60;
-  
         Hour = hour;
         minit = realMinute;
       }
@@ -92,12 +90,12 @@ const menuData = async()=> {
                   }" alt="">
                   <div class="space-y-2">
                       <h1 class="text-base font-bold" >${element.title}</h1>
-                     <div class="flex gap-2"> <h3 class="text-sm font-normal inline-block">${
+                     <div class="flex gap-2"> <h3 class="text-sm text-[#171717a9] font-normal inline-block">${
                        element.authors[0].profile_name
                      }</h3> <span>${
         element.authors[0].verified ? '<img src="./Verified.jpeg" class="w-6">' : ""
       }</span></div>
-                      <h4 class="text-sm font-normal">${
+                      <h4 class="text-sm text-[#171717a9] font-normal">${
                         element.others.views} views</h4>
                   </div>
               </div>
@@ -114,15 +112,15 @@ const menuData = async()=> {
   
 
   let Musicbtn =async()=> {
-    document.getElementById("All").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("All").classList.add("text-[#1f2935]", "bg-gray-300");
     document
-      .getElementById("Music").classList.add("bg-gray-300", "text-[#1f2935]");
+      .getElementById("Music").classList.add("text-[#1f2935]", "bg-gray-300");
    
-      document.getElementById("Comedy").classList.add("bg-gray-300", "text-[#1f2935]");
+      document.getElementById("Comedy").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Drawing").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Drawing").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Music").classList.remove("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Music").classList.remove("text-[#1f2935]", "bg-gray-300");
     
     document.getElementById("Music").classList.add("bg-red-500", "text-white");
   
@@ -145,7 +143,6 @@ const menuData = async()=> {
       function toHourAndMinit(sec) {
         let mModulus = sec % 60;
         let minute = (sec - mModulus) / 60;
-  
         let realMinute = minute % 60;
         let hour = (minute - realMinute) / 60;
   
@@ -173,12 +170,12 @@ const menuData = async()=> {
                   }" alt="">
                   <div class="space-y-2">
                       <h1 class=" font-bold" >${element.title}</h1>
-                     <div class="flex gap-2"> <h3 class="text-sm inline-block">${
+                     <div class="flex gap-2"> <h3 class="text-sm text-[#171717a9] inline-block">${
                        element.authors[0].profile_name
                      }</h3> <span>${
         element.authors[0].verified ? '<img src="./Verified.jpeg" class="w-6">' : ""
       }</span></div>
-                      <h4 class="text-sm">${
+                      <h4 class="text-sm text-[#171717a9]">${
                         element.others.views
                       } views</h4>
                   </div>
@@ -198,13 +195,13 @@ const menuData = async()=> {
 
   let Comedybtn =async()=> {
     
-    document.getElementById("All").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("All").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Music").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Music").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Comedy").classList.remove("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Comedy").classList.remove("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Drawing").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Drawing").classList.add("text-[#1f2935]", "bg-gray-300");
     
     document.getElementById("Comedy").classList.add("bg-red-500", "text-white");
   
@@ -258,11 +255,11 @@ const menuData = async()=> {
                   }" alt="">
                   <div class="space-y-2">
                       <h1 class="font-bold" >${element.title}</h1>
-                     <div class="flex gap-2"> <h3 class="text-sm inline-block">${
+                     <div class="flex gap-2"> <h3 class="text-sm text-[#171717a9] inline-block">${
                        element.authors[0].profile_name
                      }</h3> <span>${element.authors[0].verified ? '<img src="./Verified.jpeg" class="w-6">' : ""
       }</span></div>
-                      <h4 class="text-sm">${
+                      <h4 class="text-sm text-[#171717a9]">${
                         element.others.views
                       } views</h4>
                   </div>
@@ -281,13 +278,13 @@ const menuData = async()=> {
 
   let Drawingbtn = () => {
     
-    document.getElementById("All").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("All").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Music").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Music").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Comedy").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Comedy").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Drawing").classList.remove("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Drawing").classList.remove("text-[#1f2935]", "bg-gray-300");
     
     document.getElementById("Drawing").classList.add("bg-red-500", "text-white");
     
@@ -319,8 +316,8 @@ const menuData = async()=> {
   pageFire();
   
   // blog button
-  let blogButton = () => {
-    window.location.replace("blog.html");
+  let blogButton =()=> {
+    window.location.href = 'blog.html'
   };
 
 
@@ -336,15 +333,15 @@ const sort = async () => {
   
   let allBtnDataSort =(data)=> {
 
-    document.getElementById("All").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("All").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Music").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Music").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Comedy").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Comedy").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Drawing").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Drawing").classList.add("text-[#1f2935]", "bg-gray-300");
     
-    document.getElementById("Music").classList.add("bg-gray-300", "text-[#1f2935]");
+    document.getElementById("Music").classList.add("text-[#1f2935]", "bg-gray-300");
    
   
     videoCont.innerHTML = "";
@@ -393,13 +390,13 @@ const sort = async () => {
                     }" alt="">
                     <div class="space-y-2">
                         <h1 class="font-bold" >${element.title}</h1>
-                       <div class="flex gap-2"> <h3 class="text-sm inline-block">${
+                       <div class="flex gap-2"> <h3 class="text-sm text-[#171717a9] inline-block">${
                          element.authors[0].profile_name
                        }</h3> <span>${
           element.authors[0].verified ? '<img src="./Verified.jpeg" class="w-6">' : ""
         }</span>
          </div>
-         <h4 class="text-sm">${element.others.views} views</h4>
+         <h4 class="text-sm text-[#171717a9]">${element.others.views} views</h4>
          </div>
         </div>
      </section>    
