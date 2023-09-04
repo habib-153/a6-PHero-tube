@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- css -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+    
+    *{
+        font-family: 'Inter', sans-serif;
+    }
+</style>
+</head>
+<body>
+    <section class="mx-auto px-4">
+        <!-- navbar -->
+        <nav class="flex flex-col lg:flex-row space-y-4 items-center justify-between  pt-10 pb-4 border-b-4 border-gray-200 ">
+            <img src="./Logo.png" alt="logo" class="">
+            <div class="w-full md:w-[55%] flex justify-between">
+                <button onclick="sort()" class="btn bg-gray-400 font-medium text-lg ">Sort by view</button>
+
+                <button onclick="blogButton()" class="bg-red-500 text-lg font-medium btn  text-white">Blog</button>
+            </div>
+            
+        </nav>
+        <!-- menu started -->
+        <section id="menu-cont" class="flex flex-wrap justify-center items-center gap-3 py-5 text-sm font-normal">
+
+
+        </section>
+        <!-- menu End -->
+        <!-- Video -->
+        <section id="video" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        </section>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
